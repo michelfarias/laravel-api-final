@@ -17,6 +17,7 @@ class CreatePeriodosTable extends Migration
             $table->increments('id');
             $table->string('descricao',100);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

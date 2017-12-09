@@ -22,6 +22,7 @@ class CreateAlunosTable extends Migration
             $table->string('rg',100)->nullable();
             $table->date('dt_nasc')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
